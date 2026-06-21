@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#fff0f5;
+}
+
+/* Header */
+
+header{
+    background:#d63384;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffe4ec;
+}
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+
+    background:
+            linear-gradient(
+                    rgba(214,51,132,0.4),
+                    rgba(214,51,132,0.4)
+            ),
+            url('../images/event.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    width:60%;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+/* Button */
+
+.btn{
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#c2185b;
+}
+
+/* Services */
+
+.services{
+    padding:60px;
+    text-align:center;
+}
+
+.services h2{
+    color:#d63384;
+    margin-bottom:30px;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    width:260px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#d63384;
+    margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#d63384;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+.gallery{
+    width:90%;
+    margin:30px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+form{
+    width:60%;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
+}
